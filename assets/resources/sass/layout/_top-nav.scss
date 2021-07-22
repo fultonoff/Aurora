@@ -2,6 +2,10 @@
   display: flex;
   padding: 0 2rem;
   justify-content: center;
+
+  @media only screen and(max-width: 31.25em){
+    display: none;
+}
   
 
   &__title {
@@ -19,6 +23,10 @@
     display: flex;
     // float: right;
     margin-left: auto;
+
+    @media only screen and(max-width: 62.5em){
+      align-items: center;
+  }
     
 
     .location-icon{

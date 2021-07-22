@@ -1,106 +1,117 @@
-.ts{
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.14);
+.ts {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.14);
 }
 
-.pad-top-nav{
-    padding: 1.2rem 0;
+.pad-top-nav {
+  padding: 1.2rem 0;
 }
-.upper{
-    text-transform: uppercase;
-}
-
-.btn{
-    padding: 1.1rem 2.5rem;
-    border: none;
-    border-radius: .3rem;
-    color: $white;
-    background-color: $black;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    line-height: 2rem;
-    cursor: pointer;
+.upper {
+  text-transform: uppercase;
 }
 
-.foo-t{
-    font-family: 'Cormorant Garamond', sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 2rem;
-    line-height: 1.9rem;
-    letter-spacing: 2px;
+.btn {
+  padding: 1.1rem 2.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  color: $white;
+  background-color: $black;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  cursor: pointer;
 }
 
-.mt{
-    margin-top: 2rem;
+.foo-t {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.9rem;
+  letter-spacing: 2px;
 }
 
-.scrolled{
-    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255));
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    color: $black;
+.mt {
+  margin-top: 2rem;
+}
 
-    .navigation__up, .navigation__sub{
-        background-color: #fff;
-       
-        
+.scrolled {
+  background: linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: $black;
+
+  .navigation__up,
+  .navigation__sub {
+    background-color: #fff;
+  }
+  .navigation__up {
+    .logo {
+      a {
+        color: $black;
+        text-shadow: none;
+      }
     }
-    .navigation__up{
-        .logo{
-            a{
-                color: $black;
-                text-shadow:none
-
-            }
+    .search-bar {
+      .search {
+        color: $black;
+        &::placeholder {
+          color: #000;
         }
-        .search-bar{
-            
-            .search{
-                color: $black;
-                &::placeholder{
-                    color: #000;
-                }
-            }
+      }
 
-            a{
-                svg{
-
-                    fill: #000;
-                }
-            }
+      a {
+        svg {
+          fill: #000;
         }
-
-        .sign{
-            .sign-in,
-            .sign-up{
-                color: #000;
-            }
-
-            .sign-in{
-                border-right: 2px solid $black;
-                
-            }
-            a{
-                svg{
-
-                    
-                    fill: #000;
-                }
-            }
-        }
+      }
     }
 
-    .navigation__sub{
-    ul{
-            .item{
-                .link{
-                    color: #000;
-                    text-shadow:none
-                }
-            }
+    .sign {
+      .sign-in,
+      .sign-up {
+        color: #000;
+      }
+
+      .sign-in {
+        border-right: 2px solid $black;
+      }
+      a {
+        svg {
+          fill: #000;
         }
+      }
     }
+  }
+
+  .navigation__sub {
+    ul {
+      .item {
+        .link {
+          color: #000;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+.nav-linear {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.white{
+    background-color: $white;
 }

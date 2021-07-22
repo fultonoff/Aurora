@@ -51,3 +51,46 @@ sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 
+////////////////////////////
+//Toggle search bar /mobile
+
+const searchMobile = document.querySelector('.mob-search-icon')
+const removeSeacrh = document.querySelector('.mob-search-rem')
+const searchInput = document.querySelector('.mob-search-text')
+
+const searchBar = document.querySelector('.mob-search-text')
+const searchBarIcon = document.querySelector('.plus')
+
+const searchBarclose = document.querySelector('.mob-search-rem')
+
+const mobileNav = document.querySelector('.mobile-nav')
+
+
+const classToggler = ()=>{
+  removeSeacrh.classList.toggle('hidden')
+  searchMobile.classList.toggle('hidden')
+  searchBar.classList.toggle('hidden')
+  searchBarIcon.classList.toggle('hidden')
+  
+}
+searchMobile.addEventListener('click', ()=>{
+  classToggler();
+
+  mobileNav.classList.add('active')
+  mobileNav.classList.remove('nav-linear')
+  
+
+})
+
+searchBarclose.addEventListener('click', ()=>{
+  classToggler()
+  mobileNav.classList.remove('active')
+  mobileNav.classList.add('nav-linear')
+})
+
+
+/////footer accordion
+
+new Accordion('.accordion-container');
+
+

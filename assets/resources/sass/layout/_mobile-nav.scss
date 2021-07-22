@@ -1,0 +1,196 @@
+.mobile-nav{
+    display: none;
+    padding-bottom: 1rem;
+    @media only screen and(max-width: 31.25em){
+        display: block;
+
+    }
+    .nav-mob{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+
+        .logo-mob{
+            a{
+                text-decoration: none;
+                color: $white;
+                font-weight: bold;
+                font-size: 5rem;
+            }
+        }
+
+        .burg-search{
+
+            .burger{
+
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                margin-right: 2rem;
+
+                span{
+                    position: relative;
+                    background-color: $white;
+                    width: 5rem;
+                    height: .6rem;
+
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        width: 5rem;
+                    height: .6rem;
+                    background-color: $white;
+                    top: 8px;
+                    }
+
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        width: 5rem;
+                    height: .6rem;
+                    background-color: $white;
+                    bottom: 8px;
+                    }
+                }
+            }
+
+            .mob-search-icon{
+                position: relative;
+                svg{
+                    fill: $white;
+                    flex-grow: inherit;
+                    position: absolute;
+                    top: -11px;
+                }
+            }
+
+            .mob-search-rem{
+                svg{
+                    fill: $white;
+                }
+            }
+        }
+
+        .mob-card-num{
+
+
+            .mob-card{
+                a{
+                    svg{
+                        fill: $white;
+                        margin-right: 2rem;
+                    }
+                }
+            }
+
+            .mob-num{
+                background-color: $yellow;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 3rem;
+                width: 3rem;
+                border-radius: 50px;
+                a{
+                    text-decoration: none;
+                    color: $black;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+    }
+
+
+    .mob-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+        
+        .mob-search-text{
+            width: 100%;
+            padding: 2rem 2rem;
+            font-size: 3rem;
+            line-height: 1.6rem;
+            border-radius: 3px;
+            border: none;
+            color: $black;
+            background-color: $grey-2;
+
+            &::placeholder{
+                color: $black;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+        }
+
+        a{
+            
+            svg{
+                fill: $black;
+                position: absolute;
+                right: 15px;
+                top: 15px;
+            }
+            
+        }
+    }
+
+    &.active{
+        background-color: rgb(255, 255, 255);
+
+        .nav-mob{
+
+            .burg-search{
+                
+                .burger{
+                    span{
+                        background-color: $black;
+
+                        &::before,
+                        &::after{
+                            background-color: $black;
+                        }
+                    }
+                }
+            }
+
+            .mob-search-icon{
+                svg{
+                    fill: $black;
+                }
+            }
+
+            .mob-search-rem{
+                svg{
+                    fill: $black;
+                }
+            }
+
+            .logo-mob{
+                a{
+                    color: $black;
+                    text-shadow: none;
+                }
+            }
+
+            .mob-card-num{
+                .mob-card{
+                    a{
+                        svg{
+                            fill: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
