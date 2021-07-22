@@ -1,0 +1,36 @@
+.ts{
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.14);
+}
+
+.pad-top-nav{
+    padding: 1.2rem 0;
+}
+.upper{
+    text-transform: uppercase;
+}
+
+.btn{
+    padding: 1.1rem 2.5rem;
+    border: none;
+    border-radius: .3rem;
+    color: $white;
+    background-color: $black;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+.foo-t{
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1.9rem;
+    letter-spacing: 2px;
+}
+
+.mt{
+    margin-top: 2rem;
+}

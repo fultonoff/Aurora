@@ -1,0 +1,40 @@
+.top-nav {
+  display: flex;
+  padding: 0 2rem;
+  justify-content: center;
+
+  &__title {
+    
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 1.1rem;
+    position: absolute;
+    line-height: 1.6rem;
+    letter-spacing: 0.8px;
+  }
+
+  &__location {
+    
+    display: flex;
+    // float: right;
+    margin-left: auto;
+    
+
+    .location-icon{
+        svg{
+            fill: rgb(0, 0, 0);
+            margin-right: .5rem;
+            
+            
+        }
+    }
+
+    .location-text{
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.6;
+        letter-spacing: 0.8px;
+    }
+    
+  }
+}

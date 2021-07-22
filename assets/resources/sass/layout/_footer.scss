@@ -1,0 +1,60 @@
+.foot{
+background-color: $grey-2;
+
+    .footer{
+        height: 20vh;
+        max-width: 110rem;
+        margin: 0 auto;
+        padding: 4rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        div{
+            input{
+                display: none;
+            }
+        }
+
+        ul{
+            li{
+                list-style: none;
+                a:link,
+                a:visited{
+                    text-decoration: none;
+                    color: $black;
+                    font-size: 1.2rem;
+                    line-height: 19px;
+                }
+            }
+        }
+
+        .social {
+
+            display: flex;
+            flex-direction: column;
+
+            ul{
+                display: flex;
+                margin-top: 2rem;
+
+                li{
+                    list-style: none;
+
+                    a{
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .copyright{
+        text-align: center;
+        font-size: .9rem;
+        line-height: 1.3rem;
+        letter-spacing: 0.5px;
+    }
+}
