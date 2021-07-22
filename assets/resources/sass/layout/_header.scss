@@ -18,3 +18,10 @@
         letter-spacing: 3px;
     }
 }
+
+.header.active{
+    background: url(/assets/resources/img/bg/hp-oh-hi.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 90vh;
+}

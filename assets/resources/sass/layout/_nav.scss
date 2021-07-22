@@ -1,5 +1,6 @@
 .navigation {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &__up {
     display: flex;
@@ -67,6 +68,11 @@
         }
        .sign-in{
             border-right: 2px solid #fff;
+
+            
+        }
+        .sign-in.active{
+          border-right: none;
         }
         &>*:not(:last-child){
             padding: 0 .5rem;
@@ -76,6 +82,54 @@
             letter-spacing: 1px;
             font-weight: 600;
         }
+
+        .sign-up.active{
+          display: none;
+        }
+        a{
+          svg{
+            fill: $white;
+          }
+        }
+        
+        .card-num{
+          background-color: $yellow;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          display: none;
+          
+
+          .num{
+            color: $black;
+            font-weight: 600;
+          }
+          
+        }
+
+        .card-num.active{
+          background-color: $yellow;
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          
+          
+
+          .num{
+            color: $black;
+            font-weight: 600;
+          }
+          
+        }
+        
     }
   }
 

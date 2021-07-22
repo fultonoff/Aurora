@@ -55,6 +55,69 @@ body {
   margin-top: 2rem;
 }
 
+.scrolled {
+  background: -webkit-gradient(linear, left bottom, left top, from(white), to(white));
+  background: -webkit-linear-gradient(bottom, white, white);
+  background: -o-linear-gradient(bottom, white, white);
+  background: linear-gradient(0deg, white, white);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #000000;
+}
+
+.scrolled .navigation__up, .scrolled .navigation__sub {
+  background-color: #fff;
+}
+
+.scrolled .navigation__up .logo a {
+  color: #000000;
+  text-shadow: none;
+}
+
+.scrolled .navigation__up .search-bar .search {
+  color: #000000;
+}
+
+.scrolled .navigation__up .search-bar .search::-webkit-input-placeholder {
+  color: #000;
+}
+
+.scrolled .navigation__up .search-bar .search:-ms-input-placeholder {
+  color: #000;
+}
+
+.scrolled .navigation__up .search-bar .search::-ms-input-placeholder {
+  color: #000;
+}
+
+.scrolled .navigation__up .search-bar .search::placeholder {
+  color: #000;
+}
+
+.scrolled .navigation__up .search-bar a svg {
+  fill: #000;
+}
+
+.scrolled .navigation__up .sign .sign-in,
+.scrolled .navigation__up .sign .sign-up {
+  color: #000;
+}
+
+.scrolled .navigation__up .sign .sign-in {
+  border-right: 2px solid #000000;
+}
+
+.scrolled .navigation__up .sign a svg {
+  fill: #000;
+}
+
+.scrolled .navigation__sub ul .item .link {
+  color: #000;
+  text-shadow: none;
+}
+
 .foot {
   background-color: #f7f7f7;
 }
@@ -146,11 +209,21 @@ body {
   letter-spacing: 3px;
 }
 
+.header.active {
+  background: url(/assets/resources/img/bg/hp-oh-hi.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 90vh;
+}
+
 .navigation {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(transparent));
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), transparent);
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.3), transparent);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
+  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .navigation__up {
@@ -254,12 +327,69 @@ body {
   border-right: 2px solid #fff;
 }
 
+.navigation__up .sign .sign-in.active {
+  border-right: none;
+}
+
 .navigation__up .sign > *:not(:last-child) {
   padding: 0 .5rem;
   font-size: 1.1rem;
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.navigation__up .sign .sign-up.active {
+  display: none;
+}
+
+.navigation__up .sign a svg {
+  fill: #ffffff;
+}
+
+.navigation__up .sign .card-num {
+  background-color: #F2DA91;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  display: none;
+}
+
+.navigation__up .sign .card-num .num {
+  color: #000000;
+  font-weight: 600;
+}
+
+.navigation__up .sign .card-num.active {
+  background-color: #F2DA91;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.navigation__up .sign .card-num.active .num {
+  color: #000000;
   font-weight: 600;
 }
 

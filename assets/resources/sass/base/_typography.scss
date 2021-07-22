@@ -34,3 +34,73 @@
 .mt{
     margin-top: 2rem;
 }
+
+.scrolled{
+    background: linear-gradient(0deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: $black;
+
+    .navigation__up, .navigation__sub{
+        background-color: #fff;
+       
+        
+    }
+    .navigation__up{
+        .logo{
+            a{
+                color: $black;
+                text-shadow:none
+
+            }
+        }
+        .search-bar{
+            
+            .search{
+                color: $black;
+                &::placeholder{
+                    color: #000;
+                }
+            }
+
+            a{
+                svg{
+
+                    fill: #000;
+                }
+            }
+        }
+
+        .sign{
+            .sign-in,
+            .sign-up{
+                color: #000;
+            }
+
+            .sign-in{
+                border-right: 2px solid $black;
+                
+            }
+            a{
+                svg{
+
+                    
+                    fill: #000;
+                }
+            }
+        }
+    }
+
+    .navigation__sub{
+    ul{
+            .item{
+                .link{
+                    color: #000;
+                    text-shadow:none
+                }
+            }
+        }
+    }
+}
