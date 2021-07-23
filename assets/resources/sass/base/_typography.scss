@@ -112,6 +112,96 @@
     display: none;
 }
 
-.white{
-    background-color: $white;
+.scrolled2 {
+  background-color: $white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  
+
+  .nav-mob{
+
+    .logo-mob{
+      a{
+        color: #000 !important;
+        text-shadow: none !important;
+      }
+    }
+
+      .mob-card-num{
+        .mob-card{
+
+          a{
+            text-shadow: none;
+
+            svg{
+              fill: #000 !important;
+            }
+          }
+        }
+      }
+    
+
+    .burg-search{
+      .burger{
+        background-color: green;
+
+        span{
+          background-color: #000 !important;
+
+          &::before,
+          &::after{
+           background-color: #000 !important;
+          }
+        }
+      }
+
+      a{
+        svg{
+          fill: #000 !important;
+        }
+      }
+    }
+  }
+}
+
+.sign-log{
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  top: 70%;
+
+  a:link,
+  a:visited{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .sign__in{
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '|';
+      right: -.4rem;
+    }
+  }
+}
+
+.bg-grey{
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color:grey;
+  z-index: 1;
+  display: none;
+}
+
+.bg-grey.active{
+  display: block;
 }

@@ -88,9 +88,37 @@ searchBarclose.addEventListener('click', ()=>{
   mobileNav.classList.add('nav-linear')
 })
 
+///mobile nav sticky
+
+
 
 /////footer accordion
 
 new Accordion('.accordion-container');
+
+
+
+
+
+
+
+/////////////////////////////
+//mobile nav sticky
+let waypoint = new Waypoint({
+  element: mobileNav,
+  handler: function(direction) {
+
+    if(direction === 'down'){
+
+      mobileNav.classList.add('scrolled2')
+      mobileNav.classList.remove('nav-linear')
+      
+    }else{
+      mobileNav.classList.remove('scrolled2')
+      mobileNav.classList.add('nav-linear')
+    }
+  },
+  offset: -10
+})
 
 
